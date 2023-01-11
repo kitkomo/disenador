@@ -1,0 +1,25 @@
+.header {
+	background-color: $white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	
+	ul {
+		padding: 0;
+		list-style: none;
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		
+		li {
+			color: $nav-menu-color;
+			font-weight: 700;
+		}
+	}
+}

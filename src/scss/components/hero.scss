@@ -1,0 +1,29 @@
+.hero-section {
+	display: flex;
+}
+
+.hero-section__info {
+	max-width: 50%;
+	min-width: 700px;
+	background-color: $yellow;
+	padding: 70px 40px;
+}
+
+.hero-section__sub-heading {
+	color: $sub-heading-on-yellow;
+}
+
+.hero-section__heading {
+	margin: 8px auto 30px;
+	font-size: 32px;
+	line-height: 48px;
+	font-weight: 700;
+}
+
+.hero-section__picture {
+	flex: 1;
+	background-image: url('../../assets/images/hero-bg.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
