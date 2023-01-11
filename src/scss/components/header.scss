@@ -23,3 +23,14 @@
 		}
 	}
 }
+
+@media (max-width: 900px) {
+	.header {
+		justify-content: center;
+	}
+
+	.header__nav {
+		position: absolute;
+		display: none;
+	}
+}

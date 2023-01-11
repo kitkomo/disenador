@@ -1,0 +1,49 @@
+.who-we-are {
+	background-color: $white;
+	padding: 80px 0;
+
+	.wrapper {
+		display: flex;
+		align-items: center;
+		gap: 120px;
+	}
+}
+
+.four-blocks-table {
+	width: 50%;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;
+	gap: 32px;
+}
+
+.section-description {
+	width: 50%;
+
+	.heading {
+		color: $description-on-white;
+	}
+
+	.description {
+		color: #4A4D5E;
+	}
+
+	.sub-heading {
+		color: #717590;
+	}
+}
+
+.cell {
+	font-weight: 700;
+	text-align: center;
+
+	.cell__header {
+		font-size: 16px;
+
+		span {
+			font-size: 48px;
+			font-weight: 700;
+			display: block;
+			color: $description-on-white;
+		}
+	}
+}

@@ -2,10 +2,23 @@
 @import 'fonts';
 @import 'components/header';
 @import 'components/hero';
+@import 'components/who-we-are';
 
 * {
 	font-family: 'Lato';
 	font-weight: 400;
+}
+
+a {
+	text-decoration: inherit;
+	color: inherit;
+	cursor: pointer;
+	font-weight: inherit;
+
+	&:hover {
+		color: $black;
+		transition: color 250ms linear;
+	}
 }
 
 .wrapper {
@@ -25,6 +38,10 @@
 	text-transform: uppercase;
 }
 
+.sub-heading--10px {
+	font-size: 10px;
+}
+
 .main-button {
 	border-radius: 4px;
 	border-style: solid;
@@ -40,12 +57,26 @@
 	background-color: $black;
 	border-color: $black;
 	color: $white;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $heading;
+		border-color: $heading;
+		transition: background-color, border-color 280ms linear;
+	}
 }
 
 .main-button--white {
-	background-color: $white;
+	background-color: transparent;
 	border-color: $button-border-white;
 	color: $black;
+
+	&:hover {
+		cursor: pointer;
+		background-color: $yellow;
+		border-color: $yellow;
+		transition: background-color, border-color 280ms linear;
+	}
 }
 
 .description {
@@ -58,6 +89,10 @@
 	color: $description-on-yellow;
 }
 
-.description--black {
+.description--grey {
 	color: $description-on-white;
+}
+
+.description--14px {
+	font-size: 14px;
 }
