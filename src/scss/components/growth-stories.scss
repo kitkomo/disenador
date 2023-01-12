@@ -3,9 +3,34 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	.section-description {
+		width: 450px;
+	}
 }
 
 .growth-stories__gradient {
-	padding: 150px 0;
+	padding: 90px 0;
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0.98) 50%, transparent);
+}
+
+.growth-stories-2 {
+	background-image: url('../../assets/images/our-stories-bg-2.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	.section-description {
+		width: 450px;
+	}
+
+	.wrapper {
+		display: flex;
+		justify-content: flex-end;
+	}
+}
+
+.growth-stories-2__gradient {
+	padding: 90px 0;
+	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.98) 50%);
 }

@@ -4,7 +4,10 @@
 @import 'components/hero';
 @import 'components/who-we-are';
 @import 'components/advantages-section';
+@import 'components/our-projects';
 @import 'components/growth-stories.scss';
+@import 'components/feedback.scss';
+@import 'components/footer.scss';
 
 * {
 	font-family: 'Lato';
@@ -32,6 +35,10 @@ a {
 .logo {
 	font-weight: bold;
 	font-size: 2rem;
+
+	a:hover {
+		color: #FFF;
+	}
 }
 
 .sub-heading {
@@ -97,4 +104,18 @@ a {
 
 .description--14px {
 	font-size: 14px;
+}
+
+.copyrights {
+	font-size: 10px;
+}
+
+.purple-clr {
+	color: #A10EA4;
+}
+.green-clr {
+	color: #0A7439;
+}
+.blue-clr {
+	color: #3C8BFB;
 }

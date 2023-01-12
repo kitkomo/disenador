@@ -1,0 +1,98 @@
+.footer {
+	background-color: $black;
+	padding: 20px 0;
+	
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+	}
+
+	h4, h5 {
+		color: #FFF;
+	}
+
+	p {
+		color: #a2a2a2;
+		line-height: 28px;
+		margin: 0;
+	}
+
+	ul {
+		padding: 0;
+	}
+
+	li {
+		color: #a2a2a2;
+		list-style: none;
+		font-size: 13px;
+		margin: 2px 0;
+		padding: 5px 0;
+
+		a:hover {
+			color: $yellow;
+			cursor: pointer;
+			transition: color 180ms linear;
+		}
+	}
+
+	.logo {
+		color: #FFF;
+	}
+}
+
+.footer__newsletter {
+	display: grid;
+	grid-template: auto auto / 1fr 1fr;
+	column-gap: 70px;
+
+	form {
+		grid-row: 1 / -1;
+		grid-column: 2 / 3;
+		align-self: end;
+		display: flex;
+
+		input {
+			background-color: #FFF;
+			border-radius: 4px;
+			padding: 13px;
+			border: 1px solid #FFF;
+			width: 100%;
+		}
+
+		button {
+			margin-left: 10px;
+			padding: 13px;
+			border: 1px solid #FFF;
+			border-radius: 4px;
+			background-color: #000;
+			color: #FFF;
+			text-transform: uppercase;;
+			min-width: 210px;
+
+			&:hover {
+				cursor: pointer;
+				color: $yellow;
+				border-color: $yellow;
+				transition: color, border-color 180ms linear;
+			}
+		}
+	}
+}
+
+.footer__navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer__bottom {
+	color: #FFF;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.social {
+	display: flex;
+	gap: 20px;
+}

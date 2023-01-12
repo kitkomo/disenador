@@ -1,0 +1,68 @@
+.our-projects {
+	background-color: #F2F5FD;
+	padding: 40px 0;
+
+	.wrapper {
+		position: relative;
+	}
+}
+
+.our-projects__main-button {
+	position: absolute;
+	right: 40px;
+	top: 99px;
+}
+
+.our-projects__projects-table {
+	display: flex;
+	gap: 50px;
+	margin: 40px 0;
+}
+
+.projects-table__cell {
+	background-color: #FFF;
+	box-shadow: 0 0 1px rgba(168, 174, 183, 0.2), 0 1px 6px #CCD3DC;
+	border-radius: 4px;
+}
+
+.projects-table__info {
+	padding: 20px;
+
+	h5 {
+		margin: 0;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+
+	h4 {
+		margin: 13px 0;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 13px;
+		color: #717590;
+		line-height: 22px;
+	}
+
+	button {
+		width: 100%;
+	}
+}
+
+.projects-table__img {
+	height: 180px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	&--finance {
+		background-image: url('../../assets/images/finance.jpg');
+	}
+	&--health-care {
+		background-image: url('../../assets/images/health-care.jpg');
+	}
+	&--education {
+		background-image: url('../../assets/images/education.jpg');
+	}
+}
