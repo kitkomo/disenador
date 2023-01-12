@@ -66,3 +66,20 @@
 		background-image: url('../../assets/images/education.jpg');
 	}
 }
+
+@media (max-width: 1040px) {
+	.our-projects__projects-table {
+		margin-top: 25px;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	.projects-table__img {
+		display: none;
+	}
+
+	.our-projects__main-button {
+		position: static;
+		
+	}
+}

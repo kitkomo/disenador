@@ -70,3 +70,29 @@
 		}
 	}
 }
+
+
+@media (max-width: 1200px) {
+	.feedback {
+		.wrapper {
+			gap: 50px;
+		}
+	}
+}
+
+@media (max-width: 940px) {
+	.feedback {
+		.wrapper {
+			flex-direction: column;
+			gap: 0;
+		}
+	}
+
+	.feedback__form {
+		width: calc(100% - 80px);
+	}
+
+	.feedback__info {
+		width: calc(100% - 80px);
+	}
+}

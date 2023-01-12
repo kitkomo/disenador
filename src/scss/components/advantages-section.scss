@@ -69,3 +69,10 @@
 		font-size: 14px;
 	}
 }
+
+@media (max-width: 1250px) {
+	.advantages-section__three-column-table {
+		flex-direction: column;
+		gap: 0;
+	}
+}

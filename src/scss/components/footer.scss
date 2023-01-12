@@ -96,3 +96,50 @@
 	display: flex;
 	gap: 20px;
 }
+
+@media (max-width: 1030px) {
+	.footer__newsletter {
+		grid-template-rows: auto auto auto;
+		grid-template-columns: auto;
+		column-gap: 20px;
+
+		form {
+			margin-top: 30px;
+			grid-row: 3 / 4;
+			grid-column: 1 / -1;
+		}
+	}
+}
+
+@media (max-width: 650px) {
+
+	.footer {
+		.wrapper {
+			gap: 40px;
+		}
+	}
+
+	.footer__navigation {
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
+	}
+
+	.footer__bottom {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 70px;
+
+		.social {
+			order: 1;
+		}
+
+		.logo {
+			order: 2;
+		}
+
+		.copyrights {
+			order: 3;
+		}
+	}
+}

@@ -34,3 +34,31 @@
 	padding: 90px 0;
 	background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.98) 50%);
 }
+
+@media (max-width: 1000px) {
+	.growth-stories-2__gradient {
+		background: #FFF;
+	}
+	.growth-stories__gradient {
+		background: #FFF;
+	}
+
+	.growth-stories, .growth-stories-2 {
+		.wrapper {
+			display: flex;
+			justify-content: center;
+		}
+
+		.section-description {
+			width: 500px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.growth-stories, .growth-stories-2 {
+		.section-description {
+			width: 100%;
+		}
+	}
+}

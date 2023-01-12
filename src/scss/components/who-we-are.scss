@@ -53,3 +53,31 @@
 		}
 	}
 }
+
+@media (max-width: 950px) {
+	.who-we-are {
+		.wrapper {
+			flex-direction: column-reverse;
+		}
+
+		.section-description {
+			width: 500px;
+		}
+	}
+
+	.four-blocks-table {
+		width: 500px;
+	}
+}
+
+@media (max-width: 600px) {
+	.who-we-are {
+		.section-description {
+			width: 100%;
+		}
+	}
+
+	.four-blocks-table {
+		width: 100%;
+	}
+}

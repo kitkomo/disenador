@@ -14,6 +14,10 @@
 	font-weight: 400;
 }
 
+body {
+	min-width: 330px;
+}
+
 a {
 	text-decoration: inherit;
 	color: inherit;
@@ -118,4 +122,10 @@ a {
 }
 .blue-clr {
 	color: #3C8BFB;
+}
+
+@media (max-width: 400px) {
+	.wrapper {
+		padding: 10px 20px;
+	}
 }
