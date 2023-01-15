@@ -10,23 +10,28 @@
   <body>
     <header class="header wrapper">
       <div class="logo"><a href="index.html">Diseñador</a></div>
-      <nav class="header__nav">
+      <nav class="header__nav" id="menu">
         <ul>
+					<li>
+						<a href="#who-we-are">About us</a>
+					</li>
           <li>
-            <a href="#">What We Do</a>
+            <a href="#what-we-do">What We Do</a>
           </li>
           <li>
-            <a href="#">Our Work</a>
+            <a href="#our-work">Our Work</a>
           </li>
           <li>
-            <a href="#">About us</a>
-          </li>
-          <li>
-            <a href="#">Resourses</a>
+            <a href="#our-values">Our Values</a>
           </li>
         </ul>
-        <button class="main-button main-button--white">Contact Us</button>
+        <a href="#feedback" class="main-button main-button--white">Contact Us</a>
       </nav>
+			<div class="header__nav-button">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
     </header>
     <main>
       <section class="hero-section">
@@ -38,7 +43,7 @@
               We help clients achieve digital business transformation through a customer-centred approach to design. With the use of technology and data we
               create experiences that drive commercial growth.
             </p>
-            <button class="main-button main-button--black">What we do</button>
+            <button class="main-button main-button--black disabled-btn">What we do</button>
             <div class="hero-section__trusted-companies">
               <div class="sub-heading sub-heading--10px">trusted by hundreds of forward thinking companies</div>
               <div class="trusted-companies__table">
@@ -52,7 +57,7 @@
         </div>
         <div class="hero-section__picture"></div>
       </section>
-      <section class="who-we-are">
+      <section class="who-we-are" id="who-we-are">
         <div class="wrapper">
           <div class="four-blocks-table">
             <div class="cell">
@@ -95,11 +100,11 @@
               Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website that
               not only looks great, but also effectively communicates their brand and drives conversions.
             </p>
-            <button class="main-button main-button--white">More about us</button>
+            <button class="main-button main-button--white disabled-btn">More about us</button>
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <section class="advantages-section" id="what-we-do">
         <div class="wrapper">
           <div class="sub-heading">What we do</div>
           <h2 class="heading">Our focus is on helping you define and create growth</h2>
@@ -148,20 +153,20 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <button class="main-button main-button--white">Our stories</button>
+              <button class="main-button main-button--white disabled-btn">Our stories</button>
             </div>
           </div>
         </div>
       </section>
 
-			<section class="our-projects">
+			<section class="our-projects" id="our-work">
 				<div class="wrapper">
 					<div class="sub-heading">Our work</div>
           <h2 class="heading">We work on the experience so you can focus on your business</h2>
           <p class="description">
             We help organisations accelerate growth by combining innovation with the.
           </p>
-					<button class="main-button main-button--white our-projects__main-button">Discover more pojects</button>
+					<button class="main-button main-button--white our-projects__main-button disabled-btn">Discover more pojects</button>
 					<div class="our-projects__projects-table">
 						<div class="projects-table__cell">
 							<div class="projects-table__img projects-table__img--finance"></div>
@@ -171,7 +176,7 @@
 								<p>
 									At our web design agency, we pride ourselves on creating visually stunning and highly functional websites for our clients. Our team of experienced designers and developers work closely with each client to understand their unique business goals and create that effectively communicates their brand and drives conversions.
 								</p>
-								<button class="main-button main-button--white">View project</button>
+								<button class="main-button main-button--white disabled-btn">View project</button>
 							</div>
 						</div>
 						<div class="projects-table__cell">
@@ -182,7 +187,7 @@
 								<p>
 									At our web design agency, we pride ourselves on creating visually stunning and highly functional websites for our clients. Our team of experienced designers and developers work closely with each client to understand their unique business goals and create that effectively communicates their brand and drives conversions.
 								</p>
-								<button class="main-button main-button--white">View project</button>
+								<button class="main-button main-button--white disabled-btn">View project</button>
 							</div>
 						</div>
 						<div class="projects-table__cell">
@@ -193,7 +198,7 @@
 								<p>
 									At our web design agency, we pride ourselves on creating visually stunning and highly functional websites for our clients. Our team of experienced designers and developers work closely with each client to understand their unique business goals and create that effectively communicates their brand and drives conversions.
 								</p>
-								<button class="main-button main-button--white">View project</button>
+								<button class="main-button main-button--white disabled-btn">View project</button>
 							</div>
 						</div>
 					</div>
@@ -210,12 +215,12 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <button class="main-button main-button--white">Our stories</button>
+              <button class="main-button main-button--white disabled-btn">Our stories</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="advantages-section">
+      <section class="advantages-section" id="our-values">
         <div class="wrapper">
           <div class="sub-heading">Our values</div>
           <h2 class="heading">Eveything we do is driven by our desire to create meaningful experiences</h2>
@@ -251,7 +256,7 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback" id="feedback">
         <div class="wrapper">
           <div class="feedback__info">
             <h2 class="heading">Let's get started - Tell us about your project and goals.</h2>
@@ -365,5 +370,7 @@
 				</div>
 			</footer>
     </main>
+		<script src="js/menu.js"></script>
+		<script src="js/disabledBtns.js"></script>
   </body>
 </html>

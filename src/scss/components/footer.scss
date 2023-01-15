@@ -38,6 +38,10 @@
 
 	.logo {
 		color: #FFF;
+
+		a:hover {
+			color: #FFF;
+		}
 	}
 }
 
@@ -112,7 +116,6 @@
 }
 
 @media (max-width: 650px) {
-
 	.footer {
 		.wrapper {
 			gap: 40px;
@@ -140,6 +143,23 @@
 
 		.copyrights {
 			order: 3;
+		}
+	}
+}
+
+@media (max-width: 530px) {
+	.footer__newsletter {
+		form {
+			flex-direction: column;
+			gap: 20px;
+
+			input {
+				width: calc(100% - 26px);
+			}
+
+			button {
+				margin: 0;
+			}
 		}
 	}
 }

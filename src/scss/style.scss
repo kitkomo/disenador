@@ -14,6 +14,10 @@
 	font-weight: 400;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	min-width: 330px;
 }
@@ -39,10 +43,6 @@ a {
 .logo {
 	font-weight: bold;
 	font-size: 2rem;
-
-	a:hover {
-		color: #FFF;
-	}
 }
 
 .sub-heading {
@@ -122,6 +122,10 @@ a {
 }
 .blue-clr {
 	color: #3C8BFB;
+}
+
+.disabled-btn {
+	transition: all 1000ms ease-in;
 }
 
 @media (max-width: 400px) {

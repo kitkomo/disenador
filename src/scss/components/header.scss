@@ -24,13 +24,71 @@
 	}
 }
 
+.header__nav-button {
+	width: 30px;
+	height: 20px;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 7px;
+	border-radius: 4px;
+	cursor: pointer;
+
+	div {
+		width: 100%;
+		background-color: black;
+		height: 0.18rem;
+		border-radius: 5px;
+	}
+}
+
 @media (max-width: 900px) {
 	.header {
 		justify-content: center;
+		position: relative;
+
+		.logo {
+			z-index: 2;
+			background-color: $white;
+		}
 	}
 
 	.header__nav {
 		position: absolute;
-		display: none;
+		top: 76px;
+		background-color: $white;
+		width: calc(100% - 100px);
+		padding: 50px;
+		flex-direction: column;
+		transform: translateY(-130%);
+		transition: transform 300ms ease;
+		z-index: 1;
+
+		ul {
+			flex-direction: column;
+		}
+
+		&--active {
+			transform: translateY(0) !important;
+		}
+	}
+
+	.header__nav-button {
+		display: flex;
+		position: absolute;
+		right: 40px;
+		z-index: 3;
+	}
+
+}
+
+@media (max-width: 550px) {
+	.header__nav-button {
+		right: 10px;
+	}
+}
+@media (max-width: 400px) {
+	.header__nav {
+		top: 55px;
 	}
 }
