@@ -1,10 +1,13 @@
-const { src, dest, watch, parallel } = require('gulp')
+const { src, dest, watch, parallel, series } = require('gulp')
 const sass = require('gulp-sass')(require('sass'))
 const concat = require('gulp-concat')
 const browserSync = require('browser-sync').create()
 const uglify = require('gulp-uglify-es').default
 const autoprefixer = require('gulp-autoprefixer')
 const imagemin = require('gulp-imagemin')
+const fonter = require('gulp-fonter')
+const ttf2woff2 = require('gulp-ttf2woff2')
+const del = require('del')
 
 function styles() {
   return src([
@@ -47,6 +50,15 @@ function images() {
 	.pipe(dest('dist/assets/images'))
 }
 
+function fonts() {
+	return src('src/assets/fonts/*.*')
+	.pipe(fonter(
+		{formats: ['ttf', 'woff']}
+	))
+	.pipe(ttf2woff2())
+	.pipe(dest('src/assets/fonts'))
+}
+
 function watching() {
   watch(['src/scss/**/*.scss'], styles)
   watch(['src/js/components/*.js'], scripts)
@@ -72,10 +84,16 @@ function build() {
 	.pipe(dest('dist'))
 }
 
+function cleanDist() {
+	return del('dist')
+}
+
 exports.styles = styles
 exports.scripts = scripts
 exports.watching = watching
 exports.browsersync = browsersync
 exports.images = images
-exports.build = parallel(build, images)
+exports.fonts = fonts
+exports.cleanDist = cleanDist
+exports.build = series(cleanDist, build, images)
 exports.default = parallel(browsersync, watching)
