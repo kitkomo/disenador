@@ -26,8 +26,7 @@ function styles() {
 
 function scripts() {
 	return src([
-		'src/js/components/menu.js',
-		'src/js/components/disabledBtns.js'
+		'src/js/components/*.js',
 	])
 	.pipe(concat('main.min.js'))
 	.pipe(uglify())

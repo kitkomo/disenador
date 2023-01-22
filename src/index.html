@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
+		<div class="loader">
+			<div class="loader-wrapper">
+				<div class="circle"></div>
+				<div class="circle"></div>
+			</div>
+		</div>
     <header class="header wrapper">
       <div class="logo"><a href="index.html">Diseñador</a></div>
       <nav class="header__nav" id="menu">
@@ -44,7 +50,7 @@
               We help clients achieve digital business transformation through a customer-centred approach to design. With the use of technology and data we
               create experiences that drive commercial growth.
             </p>
-            <button class="main-button main-button--black disabled-btn">What we do</button>
+            <button class="main-button main-button--black tooltip">What we do</button>
             <div class="hero-section__trusted-companies">
               <div class="sub-heading sub-heading--10px">trusted by hundreds of forward thinking companies</div>
               <div class="trusted-companies__table">
@@ -101,7 +107,7 @@
               Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website that
               not only looks great, but also effectively communicates their brand and drives conversions.
             </p>
-            <button class="main-button main-button--white disabled-btn">More about us</button>
+            <button class="main-button main-button--white tooltip">More about us</button>
           </div>
         </div>
       </section>
@@ -121,7 +127,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
             <div class="three-column-table__cell">
               <div class="cell__icon-block cell__direction"></div>
@@ -130,7 +136,7 @@
                 Business Model Transformation Our team of experienced designers and developers work closely with each client to understand their unique business
                 goals and create a website that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
             <div class="three-column-table__cell">
               <div class="cell__icon-block cell__services"></div>
@@ -139,7 +145,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
           </div>
         </div>
@@ -154,7 +160,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <button class="main-button main-button--white disabled-btn">Our stories</button>
+              <button class="main-button main-button--white tooltip">Our stories</button>
             </div>
           </div>
         </div>
@@ -165,7 +171,7 @@
           <div class="sub-heading">Our work</div>
           <h2 class="heading">We work on the experience so you can focus on your business</h2>
           <p class="description">We help organisations accelerate growth by combining innovation with the.</p>
-          <button class="main-button main-button--white our-projects__main-button disabled-btn">Discover more pojects</button>
+          <button class="main-button main-button--white our-projects__main-button tooltip">Discover more pojects</button>
           <div class="our-projects__projects-table">
             <div class="projects-table__cell">
               <div class="projects-table__img projects-table__img--finance"></div>
@@ -177,7 +183,7 @@
                   experienced designers and developers work closely with each client to understand their unique business goals and create that effectively
                   communicates their brand and drives conversions.
                 </p>
-                <button class="main-button main-button--white disabled-btn">View project</button>
+                <button class="main-button main-button--white tooltip">View project</button>
               </div>
             </div>
             <div class="projects-table__cell">
@@ -190,7 +196,7 @@
                   experienced designers and developers work closely with each client to understand their unique business goals and create that effectively
                   communicates their brand and drives conversions.
                 </p>
-                <button class="main-button main-button--white disabled-btn">View project</button>
+                <button class="main-button main-button--white tooltip">View project</button>
               </div>
             </div>
             <div class="projects-table__cell">
@@ -203,7 +209,7 @@
                   experienced designers and developers work closely with each client to understand their unique business goals and create that effectively
                   communicates their brand and drives conversions.
                 </p>
-                <button class="main-button main-button--white disabled-btn">View project</button>
+                <button class="main-button main-button--white tooltip">View project</button>
               </div>
             </div>
           </div>
@@ -220,7 +226,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <button class="main-button main-button--white disabled-btn">Our stories</button>
+              <button class="main-button main-button--white tooltip">Our stories</button>
             </div>
           </div>
         </div>
@@ -238,7 +244,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
             <div class="three-column-table__cell">
               <div class="cell__icon-block cell__fingerprint"></div>
@@ -247,7 +253,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
             <div class="three-column-table__cell">
               <div class="cell__icon-block cell__globe"></div>
@@ -256,7 +262,7 @@
                 Our team of experienced designers and developers work closely with each client to understand their unique business goals and create a website
                 that not only looks great, but also effectively communicates their brand and drives conversions.
               </p>
-              <a>Learn more</a>
+              <a class="tooltip">Learn more</a>
             </div>
           </div>
         </div>
@@ -284,97 +290,106 @@
               <h3>Request a call back</h3>
               <div>
                 <label for="name">Full name</label>
-                <input type="text" placeholder="James Peachy" id="name" required />
+                <input type="text" placeholder="James Peachy" id="name"  />
                 <label for="email">Email address</label>
-                <input type="email" placeholder="jamespeachy@gmail.com" id="email" required />
+                <input type="email" placeholder="jamespeachy@gmail.com" id="email"  />
                 <label for="number">Phone number</label>
-                <input type="tel" placeholder="+44 7533 338697" id="number" required />
+                <input type="tel" placeholder="+44 7533 338697" id="number"  />
               </div>
               <div>
                 <label for="date">Select a date</label>
-                <input type="date" required />
+                <input type="date"  />
               </div>
               <button class="main-button main-button-white" type="submit">Request a call back</button>
             </form>
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="wrapper">
-          <div class="footer__newsletter">
-            <h4>Sign up to our Newsletter</h4>
-            <p>
-              Sign up to our free newsletter offering business tips delivered to your inbox every week, along with information about our products and services.
-            </p>
-            <form>
-              <input type="email" placeholder="jamespeachy@gmail.com" />
-              <button>Join the mailing list</button>
-            </form>
-          </div>
-          <div class="footer__navigation">
-            <div>
-              <h5>About EY Seren</h5>
-              <ul>
-                <li><a href="#what-we-do">What we do</a></li>
-                <li><a href="#our-work">Our work</a></li>
-                <li><a href="#who-we-are">About us</a></li>
-                <li><a href="#our-values">Our Values</a></li>
-                <li><a>Our Thinking</a></li>
-                <li><a>Our People</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5>Discover more</h5>
-              <ul>
-                <li><a>Resources</a></li>
-                <li><a>Blog</a></li>
-                <li><a>FAQs</a></li>
-                <li><a>Entrepreneurs guide</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5>Support</h5>
-              <ul>
-                <li><a>Help</a></li>
-                <li><a>Contact us</a></li>
-                <li><a>Privacy Policy</a></li>
-                <li><a>Terms of Service</a></li>
-                <li><a>Modern Slavery Statement</a></li>
-              </ul>
-            </div>
-            <div>
-              <h5>Locations</h5>
-              <ul>
-                <li>BOGOTA</li>
-                <li>Calle 95 # 100 - 12</li>
-                <li>Office 23</li>
-              </ul>
-            </div>
-          </div>
-          <div class="footer__bottom">
-            <div class="logo"><a href="#">Diseñador</a></div>
-            <div class="copyrights">© 2023 el Diseñador</div>
-            <div class="social">
-              <a href="#">
-                <img src="assets/images/linkedin.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/images/facebook.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/images/instagram.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/images/twitter.svg" alt="" />
-              </a>
-              <a href="#">
-                <img src="assets/images/youtube.svg" alt="" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
+		<footer class="footer">
+			<div class="wrapper">
+				<div class="footer__newsletter">
+					<h4>Sign up to our Newsletter</h4>
+					<p>
+						Sign up to our free newsletter offering business tips delivered to your inbox every week, along with information about our products and services.
+					</p>
+					<form>
+						<input type="email" placeholder="jamespeachy@gmail.com" />
+						<button id="emailBtn">Join the mailing list</button>
+					</form>
+				</div>
+				<div class="footer__navigation">
+					<div>
+						<h5>About EY Seren</h5>
+						<ul>
+							<li><a href="#what-we-do">What we do</a></li>
+							<li><a href="#our-work">Our work</a></li>
+							<li><a href="#who-we-are">About us</a></li>
+							<li><a href="#our-values">Our Values</a></li>
+							<li><a class="tooltip">Our Thinking</a></li>
+							<li><a class="tooltip">Our People</a></li>
+						</ul>
+					</div>
+					<div>
+						<h5>Discover more</h5>
+						<ul>
+							<li><a class="tooltip">Resources</a></li>
+							<li><a class="tooltip">Blog</a></li>
+							<li><a class="tooltip">FAQs</a></li>
+							<li><a class="tooltip">Entrepreneurs guide</a></li>
+						</ul>
+					</div>
+					<div>
+						<h5>Support</h5>
+						<ul>
+							<li><a class="tooltip">Help</a></li>
+							<li><a class="tooltip">Contact us</a></li>
+							<li><a class="tooltip">Privacy Policy</a></li>
+							<li><a class="tooltip">Terms of Service</a></li>
+							<li><a class="tooltip">Modern Slavery Statement</a></li>
+						</ul>
+					</div>
+					<div>
+						<h5>Locations</h5>
+						<ul>
+							<li>BOGOTA</li>
+							<li>Calle 95 # 100 - 12</li>
+							<li>Office 23</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__bottom">
+					<div class="logo"><a href="#">Diseñador</a></div>
+					<div class="copyrights">© 2023 el Diseñador</div>
+					<div class="social">
+						<a href="https://github.com/unjusodal" target="_blank">
+							<img src="assets/images/linkedin.svg" alt="" />
+						</a>
+						<a href="https://github.com/unjusodal" target="_blank">
+							<img src="assets/images/facebook.svg" alt="" />
+						</a>
+						<a href="https://github.com/unjusodal" target="_blank">
+							<img src="assets/images/instagram.svg" alt="" />
+						</a>
+						<a href="https://github.com/unjusodal" target="_blank">
+							<img src="assets/images/twitter.svg" alt="" />
+						</a>
+						<a href="https://github.com/unjusodal" target="_blank">
+							<img src="assets/images/youtube.svg" alt="" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/gsap.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+		<script>
+			tippy('.tooltip', {
+  			content: "Sorry, I don\'t work",
+				placement: 'right'
+			});
+		</script>
   </body>
 </html>
