@@ -1,7 +1,11 @@
 function scroll() {
-	const links = document.querySelectorAll('a')
+	const headerLinks = document.querySelectorAll('.header__nav a')
+	const footerLinks = document.querySelectorAll('.footer__navigation a')
 
-	links.forEach(link => {
+	headerLinks.forEach(link => {
+		link.addEventListener('click', scroll)
+	})
+	footerLinks.forEach(link => {
 		link.addEventListener('click', scroll)
 	})
 
